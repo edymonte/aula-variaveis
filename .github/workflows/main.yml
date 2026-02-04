@@ -35,13 +35,13 @@ jobs:
           RUNNER_VARS: ${{ toJson(vars) }} 
         run: echo "$RUNNER_VARS"
       - name: Variavel vars
-        run: echo "${{ vars.VARS_CONTEXT}}
+        run: echo "${{ vars.VARS_CONTEXT}}"
       - name: Contexto secret 
         env: 
           RUNNER_SECRETS: ${{ toJson(secrets) }} 
         run: echo "$RUNNER_SECRETS"
       - name: Variavel Secrets
-        run: echo "${{ secrets.SECRETS_CONTEXT}}
+        run: echo "${{ secrets.SECRETS_CONTEXT}}"
         
          
    
